@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cf714f7138fbefd5cb98fcd4c019640f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cf714f7138fbefd5cb98fcd4c019640f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cf714f7138fbefd5cb98fcd4c019640f = L.map(
+                "map_cf714f7138fbefd5cb98fcd4c019640f",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e9bb29b16738a5e4ffcef0882f0174fe = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e9bb29b16738a5e4ffcef0882f0174fe.addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+            var circle_marker_8e08a0efcb9ac9dc66764b9646f72dee = L.circleMarker(
+                [56.130366, -106.346771],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6000000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_08b5ef1b2962ea54b73263504de46561 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45f2d735edc6c598a73433b340dda1e6 = $(`<div id="html_45f2d735edc6c598a73433b340dda1e6" style="width: 100.0%; height: 100.0%;">Country: Canada<br>Youtubers: 6.0<br>Avg Subscriber: 31016667<br>Avg View: 19049041113</div>`)[0];
+                popup_08b5ef1b2962ea54b73263504de46561.setContent(html_45f2d735edc6c598a73433b340dda1e6);
+            
+        
+
+        circle_marker_8e08a0efcb9ac9dc66764b9646f72dee.bindPopup(popup_08b5ef1b2962ea54b73263504de46561)
+        ;
+
+        
+    
+    
+            var circle_marker_2d10d33676d74995b2b9ff226c263575 = L.circleMarker(
+                [37.09024, -95.712891],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.8, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_43ed65c8560c8b76c3bf3b52c4783c33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3808291554a06c454029d3a04a4cf04 = $(`<div id="html_f3808291554a06c454029d3a04a4cf04" style="width: 100.0%; height: 100.0%;">Country: United States<br>Youtubers: 178.0<br>Avg Subscriber: 25335955<br>Avg View: 13594877775</div>`)[0];
+                popup_43ed65c8560c8b76c3bf3b52c4783c33.setContent(html_f3808291554a06c454029d3a04a4cf04);
+            
+        
+
+        circle_marker_2d10d33676d74995b2b9ff226c263575.bindPopup(popup_43ed65c8560c8b76c3bf3b52c4783c33)
+        ;
+
+        
+    
+    
+            var circle_marker_ec45c1c24897a502bc43b1ee62d51e40 = L.circleMarker(
+                [-0.789275, 113.92132699999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.9000000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_daaf6ad94001a477281740f2aca451b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33fbcbadae434b91114021ee8e329e5a = $(`<div id="html_33fbcbadae434b91114021ee8e329e5a" style="width: 100.0%; height: 100.0%;">Country: Indonesia<br>Youtubers: 19.0<br>Avg Subscriber: 20200000<br>Avg View: 6639408893</div>`)[0];
+                popup_daaf6ad94001a477281740f2aca451b2.setContent(html_33fbcbadae434b91114021ee8e329e5a);
+            
+        
+
+        circle_marker_ec45c1c24897a502bc43b1ee62d51e40.bindPopup(popup_daaf6ad94001a477281740f2aca451b2)
+        ;
+
+        
+    
+    
+            var circle_marker_47959c9e02574cd592880f67ed85b9af = L.circleMarker(
+                [-38.416097, -63.616672],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.1, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_b1fb9587c53292318c9002c35e7ea656 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e3e5b467e0a672b82f394fb7d4a96ff = $(`<div id="html_9e3e5b467e0a672b82f394fb7d4a96ff" style="width: 100.0%; height: 100.0%;">Country: Argentina<br>Youtubers: 11.0<br>Avg Subscriber: 25163636<br>Avg View: 15013488419</div>`)[0];
+                popup_b1fb9587c53292318c9002c35e7ea656.setContent(html_9e3e5b467e0a672b82f394fb7d4a96ff);
+            
+        
+
+        circle_marker_47959c9e02574cd592880f67ed85b9af.bindPopup(popup_b1fb9587c53292318c9002c35e7ea656)
+        ;
+
+        
+    
+    
+            var circle_marker_4c70157e290eaf7ec98a0d00858c63e2 = L.circleMarker(
+                [-35.675147, -71.542969],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.30000000000000004, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_ace089a2f0313323e8e86fce91eb865a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d7fb64f2c91dcfa9485caf95883ea85 = $(`<div id="html_7d7fb64f2c91dcfa9485caf95883ea85" style="width: 100.0%; height: 100.0%;">Country: Chile<br>Youtubers: 3.0<br>Avg Subscriber: 29066667<br>Avg View: 9782518859</div>`)[0];
+                popup_ace089a2f0313323e8e86fce91eb865a.setContent(html_7d7fb64f2c91dcfa9485caf95883ea85);
+            
+        
+
+        circle_marker_4c70157e290eaf7ec98a0d00858c63e2.bindPopup(popup_ace089a2f0313323e8e86fce91eb865a)
+        ;
+
+        
+    
+    
+            var circle_marker_fb7ce873d83f966d0f34b8b0b62e9e7a = L.circleMarker(
+                [61.52400999999999, 105.318756],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.3, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_4d91800a382179ec14ba083c6a296291 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2ff231f762f9e6ea06c6cab1a29cdb5 = $(`<div id="html_e2ff231f762f9e6ea06c6cab1a29cdb5" style="width: 100.0%; height: 100.0%;">Country: Russia<br>Youtubers: 13.0<br>Avg Subscriber: 27500000<br>Avg View: 17561156983</div>`)[0];
+                popup_4d91800a382179ec14ba083c6a296291.setContent(html_e2ff231f762f9e6ea06c6cab1a29cdb5);
+            
+        
+
+        circle_marker_fb7ce873d83f966d0f34b8b0b62e9e7a.bindPopup(popup_4d91800a382179ec14ba083c6a296291)
+        ;
+
+        
+    
+    
+            var circle_marker_f5c96380285a8489117f518d02056615 = L.circleMarker(
+                [23.634501, -102.552784],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.7000000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_90cd6f01eacf62d7f54457713fa8c9d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4fa59f338f1d705d855ebfc6eacce06 = $(`<div id="html_a4fa59f338f1d705d855ebfc6eacce06" style="width: 100.0%; height: 100.0%;">Country: Mexico<br>Youtubers: 17.0<br>Avg Subscriber: 18194118<br>Avg View: 5182927026</div>`)[0];
+                popup_90cd6f01eacf62d7f54457713fa8c9d9.setContent(html_a4fa59f338f1d705d855ebfc6eacce06);
+            
+        
+
+        circle_marker_f5c96380285a8489117f518d02056615.bindPopup(popup_90cd6f01eacf62d7f54457713fa8c9d9)
+        ;
+
+        
+    
+    
+            var circle_marker_0fb359885a15f54fe63e04593aac8320 = L.circleMarker(
+                [-14.235004, -51.92528],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3000000000000003, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_c728484284a585bafeee16e7a0f9f25f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69912ee488293ad239506a423c562c21 = $(`<div id="html_69912ee488293ad239506a423c562c21" style="width: 100.0%; height: 100.0%;">Country: Brazil<br>Youtubers: 33.0<br>Avg Subscriber: 20706061<br>Avg View: 8782897236</div>`)[0];
+                popup_c728484284a585bafeee16e7a0f9f25f.setContent(html_69912ee488293ad239506a423c562c21);
+            
+        
+
+        circle_marker_0fb359885a15f54fe63e04593aac8320.bindPopup(popup_c728484284a585bafeee16e7a0f9f25f)
+        ;
+
+        
+    
+    
+            var circle_marker_c363a859e394c80b6b9eda5e227267bd = L.circleMarker(
+                [4.570868, -74.297333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.9, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_c76964073eda6244c5d6d9fbce45530e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e263eb7421c73604ae512e4e0cfe9a56 = $(`<div id="html_e263eb7421c73604ae512e4e0cfe9a56" style="width: 100.0%; height: 100.0%;">Country: Colombia<br>Youtubers: 9.0<br>Avg Subscriber: 24955556<br>Avg View: 13681879415</div>`)[0];
+                popup_c76964073eda6244c5d6d9fbce45530e.setContent(html_e263eb7421c73604ae512e4e0cfe9a56);
+            
+        
+
+        circle_marker_c363a859e394c80b6b9eda5e227267bd.bindPopup(popup_c76964073eda6244c5d6d9fbce45530e)
+        ;
+
+        
+    
+    
+            var circle_marker_979e08c7ed640b0f789ac34bb816f6b1 = L.circleMarker(
+                [13.794185, -88.89653],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.1, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_e88698a6e9c02b9c6b1d63e480863493 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12b32701da1c5cfa82e443e81e5de096 = $(`<div id="html_12b32701da1c5cfa82e443e81e5de096" style="width: 100.0%; height: 100.0%;">Country: El Salvador<br>Youtubers: 1.0<br>Avg Subscriber: 46100000<br>Avg View: 10323391593</div>`)[0];
+                popup_e88698a6e9c02b9c6b1d63e480863493.setContent(html_12b32701da1c5cfa82e443e81e5de096);
+            
+        
+
+        circle_marker_979e08c7ed640b0f789ac34bb816f6b1.bindPopup(popup_e88698a6e9c02b9c6b1d63e480863493)
+        ;
+
+        
+    
+    
+            var circle_marker_c8b8da95d92e0e7bb1d32fe449110339 = L.circleMarker(
+                [6.42375, -66.58973],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.1, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_0cc4bfe9598950aef896b88783eb7314 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5583dc5a8bda70383df009af44f4207 = $(`<div id="html_c5583dc5a8bda70383df009af44f4207" style="width: 100.0%; height: 100.0%;">Country: Venezuela<br>Youtubers: 1.0<br>Avg Subscriber: 31200000<br>Avg View: 9673649438</div>`)[0];
+                popup_0cc4bfe9598950aef896b88783eb7314.setContent(html_c5583dc5a8bda70383df009af44f4207);
+            
+        
+
+        circle_marker_c8b8da95d92e0e7bb1d32fe449110339.bindPopup(popup_0cc4bfe9598950aef896b88783eb7314)
+        ;
+
+        
+    
+    
+            var circle_marker_927add8a37a623a1c0bfcb59d11ebb71 = L.circleMarker(
+                [46.227638, 2.213749],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_a386041254a326cd1572cd0fd89c1420 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e562cd026831b68d6fe225946d032b3 = $(`<div id="html_5e562cd026831b68d6fe225946d032b3" style="width: 100.0%; height: 100.0%;">Country: France<br>Youtubers: 4.0<br>Avg Subscriber: 17375000<br>Avg View: 6867846380</div>`)[0];
+                popup_a386041254a326cd1572cd0fd89c1420.setContent(html_5e562cd026831b68d6fe225946d032b3);
+            
+        
+
+        circle_marker_927add8a37a623a1c0bfcb59d11ebb71.bindPopup(popup_a386041254a326cd1572cd0fd89c1420)
+        ;
+
+        
+    
+    
+            var circle_marker_e9803a57ac95c7164a48ba474c26a119 = L.circleMarker(
+                [-1.831239, -78.183406],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_14b43c518781dcd7409472294a889dda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c22b8b1f8684b91e5586edff8fb46d18 = $(`<div id="html_c22b8b1f8684b91e5586edff8fb46d18" style="width: 100.0%; height: 100.0%;">Country: Ecuador<br>Youtubers: 2.0<br>Avg Subscriber: 13850000<br>Avg View: 2746230682</div>`)[0];
+                popup_14b43c518781dcd7409472294a889dda.setContent(html_c22b8b1f8684b91e5586edff8fb46d18);
+            
+        
+
+        circle_marker_e9803a57ac95c7164a48ba474c26a119.bindPopup(popup_14b43c518781dcd7409472294a889dda)
+        ;
+
+        
+    
+    
+            var circle_marker_99b8c6a5b91418b344b2576a1d6017c0 = L.circleMarker(
+                [21.521757, -77.781167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.1, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_0922090a285fcbb2e08d7a1e4db2a9c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ea9835b1a51d4fa3c62c07486917d74 = $(`<div id="html_4ea9835b1a51d4fa3c62c07486917d74" style="width: 100.0%; height: 100.0%;">Country: Cuba<br>Youtubers: 1.0<br>Avg Subscriber: 46300000<br>Avg View: 22936630813</div>`)[0];
+                popup_0922090a285fcbb2e08d7a1e4db2a9c0.setContent(html_4ea9835b1a51d4fa3c62c07486917d74);
+            
+        
+
+        circle_marker_99b8c6a5b91418b344b2576a1d6017c0.bindPopup(popup_0922090a285fcbb2e08d7a1e4db2a9c0)
+        ;
+
+        
+    
+    
+            var circle_marker_b0a36b00b917ed530454dbca21b5277a = L.circleMarker(
+                [30.585164000000002, 36.238414],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.30000000000000004, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_71c9ef69cca815b47d4363a93752131c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_419a68ba4fa6f0162a9fd5a8c67a1580 = $(`<div id="html_419a68ba4fa6f0162a9fd5a8c67a1580" style="width: 100.0%; height: 100.0%;">Country: Jordan<br>Youtubers: 3.0<br>Avg Subscriber: 22333333<br>Avg View: 17696693295</div>`)[0];
+                popup_71c9ef69cca815b47d4363a93752131c.setContent(html_419a68ba4fa6f0162a9fd5a8c67a1580);
+            
+        
+
+        circle_marker_b0a36b00b917ed530454dbca21b5277a.bindPopup(popup_71c9ef69cca815b47d4363a93752131c)
+        ;
+
+        
+    
+    
+            var circle_marker_3b615f9f77d6c59438e3796cc26c2c31 = L.circleMarker(
+                [23.424076, 53.847818],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_55f0aa27e1e8d827d9f78fd4320a3abe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92ac7e31897929addb8c95349488632c = $(`<div id="html_92ac7e31897929addb8c95349488632c" style="width: 100.0%; height: 100.0%;">Country: United Arab Emirates<br>Youtubers: 5.0<br>Avg Subscriber: 20460000<br>Avg View: 10217726868</div>`)[0];
+                popup_55f0aa27e1e8d827d9f78fd4320a3abe.setContent(html_92ac7e31897929addb8c95349488632c);
+            
+        
+
+        circle_marker_3b615f9f77d6c59438e3796cc26c2c31.bindPopup(popup_55f0aa27e1e8d827d9f78fd4320a3abe)
+        ;
+
+        
+    
+    
+            var circle_marker_77ee9ccff5b7931170aab32ec79dfe8e = L.circleMarker(
+                [29.31166, 47.481766],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.1, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_f937824cce2ebc2aa9f91b14ba645f63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5b59a492a15fdf43840ae5b0f93d7ec = $(`<div id="html_c5b59a492a15fdf43840ae5b0f93d7ec" style="width: 100.0%; height: 100.0%;">Country: Kuwait<br>Youtubers: 1.0<br>Avg Subscriber: 30500000<br>Avg View: 4521573939</div>`)[0];
+                popup_f937824cce2ebc2aa9f91b14ba645f63.setContent(html_c5b59a492a15fdf43840ae5b0f93d7ec);
+            
+        
+
+        circle_marker_77ee9ccff5b7931170aab32ec79dfe8e.bindPopup(popup_f937824cce2ebc2aa9f91b14ba645f63)
+        ;
+
+        
+    
+    
+            var circle_marker_3a7a034a88e4bd5d3dedd5d604b0e3fa = L.circleMarker(
+                [15.870032, 100.992541],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.3, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_b141bfa27ce71105d6c8414b27269dca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba9c34e8a492dd079384bbe2a51265ca = $(`<div id="html_ba9c34e8a492dd079384bbe2a51265ca" style="width: 100.0%; height: 100.0%;">Country: Thailand<br>Youtubers: 13.0<br>Avg Subscriber: 20946154<br>Avg View: 16060491553</div>`)[0];
+                popup_b141bfa27ce71105d6c8414b27269dca.setContent(html_ba9c34e8a492dd079384bbe2a51265ca);
+            
+        
+
+        circle_marker_3a7a034a88e4bd5d3dedd5d604b0e3fa.bindPopup(popup_b141bfa27ce71105d6c8414b27269dca)
+        ;
+
+        
+    
+    
+            var circle_marker_a537392b3f014787597b00016cd97f2e = L.circleMarker(
+                [14.058324, 108.277199],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_59c7421163658e9559e8513f7210e7a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b25d536250d6c64561c2082234cdec9f = $(`<div id="html_b25d536250d6c64561c2082234cdec9f" style="width: 100.0%; height: 100.0%;">Country: Vietnam<br>Youtubers: 2.0<br>Avg Subscriber: 17050000<br>Avg View: 9815554423</div>`)[0];
+                popup_59c7421163658e9559e8513f7210e7a0.setContent(html_b25d536250d6c64561c2082234cdec9f);
+            
+        
+
+        circle_marker_a537392b3f014787597b00016cd97f2e.bindPopup(popup_59c7421163658e9559e8513f7210e7a0)
+        ;
+
+        
+    
+    
+            var circle_marker_c3d3e05aa52a840dc691ac6c03c1ad84 = L.circleMarker(
+                [35.907757, 127.766922],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_91d97a161b2f640cbf0b050e6d783589 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8cc913ba51640bac3cb728161aeb77b8 = $(`<div id="html_8cc913ba51640bac3cb728161aeb77b8" style="width: 100.0%; height: 100.0%;">Country: South Korea<br>Youtubers: 8.0<br>Avg Subscriber: 40575000<br>Avg View: 16169075619</div>`)[0];
+                popup_91d97a161b2f640cbf0b050e6d783589.setContent(html_8cc913ba51640bac3cb728161aeb77b8);
+            
+        
+
+        circle_marker_c3d3e05aa52a840dc691ac6c03c1ad84.bindPopup(popup_91d97a161b2f640cbf0b050e6d783589)
+        ;
+
+        
+    
+    
+            var circle_marker_69e88a16c8c8805cbdc10257fbbdbdd6 = L.circleMarker(
+                [20.593684, 78.96288],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.9, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_c53f6cb2dc8d6588e164bed09fa6c35f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4dd74976b54a93b3265e0b7d88a844ed = $(`<div id="html_4dd74976b54a93b3265e0b7d88a844ed" style="width: 100.0%; height: 100.0%;">Country: India<br>Youtubers: 139.0<br>Avg Subscriber: 27539568<br>Avg View: 15392986789</div>`)[0];
+                popup_c53f6cb2dc8d6588e164bed09fa6c35f.setContent(html_4dd74976b54a93b3265e0b7d88a844ed);
+            
+        
+
+        circle_marker_69e88a16c8c8805cbdc10257fbbdbdd6.bindPopup(popup_c53f6cb2dc8d6588e164bed09fa6c35f)
+        ;
+
+        
+    
+    
+            var circle_marker_86e629de6a121cb53ee07d7188dd1399 = L.circleMarker(
+                [30.375321, 69.345116],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_a749d62ff648c4de7b2f3f668b2eecb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51dbad96f2f7ffa221645d0a865df31f = $(`<div id="html_51dbad96f2f7ffa221645d0a865df31f" style="width: 100.0%; height: 100.0%;">Country: Pakistan<br>Youtubers: 4.0<br>Avg Subscriber: 32475000<br>Avg View: 27162914140</div>`)[0];
+                popup_a749d62ff648c4de7b2f3f668b2eecb7.setContent(html_51dbad96f2f7ffa221645d0a865df31f);
+            
+        
+
+        circle_marker_86e629de6a121cb53ee07d7188dd1399.bindPopup(popup_a749d62ff648c4de7b2f3f668b2eecb7)
+        ;
+
+        
+    
+    
+            var circle_marker_7c07d44147de4e4020844d57e45ae872 = L.circleMarker(
+                [60.128161, 18.643501],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.1, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_a38fcc0faf9fb3644c2d2d6e695d4b33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a2672d9ea125cd035e40ad90a53a011 = $(`<div id="html_9a2672d9ea125cd035e40ad90a53a011" style="width: 100.0%; height: 100.0%;">Country: Sweden<br>Youtubers: 1.0<br>Avg Subscriber: 12300000<br>Avg View: 374123483</div>`)[0];
+                popup_a38fcc0faf9fb3644c2d2d6e695d4b33.setContent(html_9a2672d9ea125cd035e40ad90a53a011);
+            
+        
+
+        circle_marker_7c07d44147de4e4020844d57e45ae872.bindPopup(popup_a38fcc0faf9fb3644c2d2d6e695d4b33)
+        ;
+
+        
+    
+    
+            var circle_marker_0ea92e220bd0e5251ffc970d3f917fdb = L.circleMarker(
+                [48.379433, 31.16558],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_6a68ef025f5f57eda5f07438ea992f39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_163053d24663ecb6cda4927f7024281e = $(`<div id="html_163053d24663ecb6cda4927f7024281e" style="width: 100.0%; height: 100.0%;">Country: Ukraine<br>Youtubers: 5.0<br>Avg Subscriber: 15420000<br>Avg View: 7763200517</div>`)[0];
+                popup_6a68ef025f5f57eda5f07438ea992f39.setContent(html_163053d24663ecb6cda4927f7024281e);
+            
+        
+
+        circle_marker_0ea92e220bd0e5251ffc970d3f917fdb.bindPopup(popup_6a68ef025f5f57eda5f07438ea992f39)
+        ;
+
+        
+    
+    
+            var circle_marker_9a9f9f4b97ae53db0f922526ccc2f724 = L.circleMarker(
+                [56.879635, 24.603189],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.1, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_11ca0c0d7145af2e5d4d92db3ee6e8c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0529586bc167e8d83e7ed61b1271675 = $(`<div id="html_f0529586bc167e8d83e7ed61b1271675" style="width: 100.0%; height: 100.0%;">Country: Latvia<br>Youtubers: 1.0<br>Avg Subscriber: 20200000<br>Avg View: 20919403720</div>`)[0];
+                popup_11ca0c0d7145af2e5d4d92db3ee6e8c2.setContent(html_f0529586bc167e8d83e7ed61b1271675);
+            
+        
+
+        circle_marker_9a9f9f4b97ae53db0f922526ccc2f724.bindPopup(popup_11ca0c0d7145af2e5d4d92db3ee6e8c2)
+        ;
+
+        
+    
+    
+            var circle_marker_eb639583b26b2fdbf0e7d488ea6cc051 = L.circleMarker(
+                [51.165691, 10.451526],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_181947f3f9e7e0012843712f78e8c84c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7c94df40cece71b8e306d9d2700e3f2 = $(`<div id="html_b7c94df40cece71b8e306d9d2700e3f2" style="width: 100.0%; height: 100.0%;">Country: Germany<br>Youtubers: 4.0<br>Avg Subscriber: 18800000<br>Avg View: 12356077085</div>`)[0];
+                popup_181947f3f9e7e0012843712f78e8c84c.setContent(html_b7c94df40cece71b8e306d9d2700e3f2);
+            
+        
+
+        circle_marker_eb639583b26b2fdbf0e7d488ea6cc051.bindPopup(popup_181947f3f9e7e0012843712f78e8c84c)
+        ;
+
+        
+    
+    
+            var circle_marker_a480a88d7dc83c7beef067710258ff3e = L.circleMarker(
+                [38.963745, 35.243322],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_c5242f796d39a1a35bc059781d4bbe2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1767cc0c9c633d03f475fd1f749a4a1e = $(`<div id="html_1767cc0c9c633d03f475fd1f749a4a1e" style="width: 100.0%; height: 100.0%;">Country: Turkey<br>Youtubers: 2.0<br>Avg Subscriber: 21850000<br>Avg View: 32442908528</div>`)[0];
+                popup_c5242f796d39a1a35bc059781d4bbe2c.setContent(html_1767cc0c9c633d03f475fd1f749a4a1e);
+            
+        
+
+        circle_marker_a480a88d7dc83c7beef067710258ff3e.bindPopup(popup_c5242f796d39a1a35bc059781d4bbe2c)
+        ;
+
+        
+    
+    
+            var circle_marker_d1f6b1a721cce79c408420645aa746bd = L.circleMarker(
+                [46.818188, 8.227512],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.1, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_3f40c522a3ae53605e41764d035652a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_686cf897be5ec443d67de029e56e16b4 = $(`<div id="html_686cf897be5ec443d67de029e56e16b4" style="width: 100.0%; height: 100.0%;">Country: Switzerland<br>Youtubers: 1.0<br>Avg Subscriber: 19400000<br>Avg View: 5529131886</div>`)[0];
+                popup_3f40c522a3ae53605e41764d035652a8.setContent(html_686cf897be5ec443d67de029e56e16b4);
+            
+        
+
+        circle_marker_d1f6b1a721cce79c408420645aa746bd.bindPopup(popup_3f40c522a3ae53605e41764d035652a8)
+        ;
+
+        
+    
+    
+            var circle_marker_1ba186deb6f68a7ef50430e8a8eadaee = L.circleMarker(
+                [52.132633, 5.291266],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_13d36a8911315c4a5ce7ad290c7f32c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c5be960939a0e69ab23a6da2e5e61bc = $(`<div id="html_0c5be960939a0e69ab23a6da2e5e61bc" style="width: 100.0%; height: 100.0%;">Country: Netherlands<br>Youtubers: 2.0<br>Avg Subscriber: 21950000<br>Avg View: 11043983424</div>`)[0];
+                popup_13d36a8911315c4a5ce7ad290c7f32c6.setContent(html_0c5be960939a0e69ab23a6da2e5e61bc);
+            
+        
+
+        circle_marker_1ba186deb6f68a7ef50430e8a8eadaee.bindPopup(popup_13d36a8911315c4a5ce7ad290c7f32c6)
+        ;
+
+        
+    
+    
+            var circle_marker_7f5ed616f8d62500b4d2ac11ee5fa3f6 = L.circleMarker(
+                [40.463667, -3.7492200000000007],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.1, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_f2fd34bbaa19d7faf75fb011aed5b36b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36ab46a6986cac75c1e6571e4c9571bb = $(`<div id="html_36ab46a6986cac75c1e6571e4c9571bb" style="width: 100.0%; height: 100.0%;">Country: Spain<br>Youtubers: 11.0<br>Avg Subscriber: 16436364<br>Avg View: 6113275932</div>`)[0];
+                popup_f2fd34bbaa19d7faf75fb011aed5b36b.setContent(html_36ab46a6986cac75c1e6571e4c9571bb);
+            
+        
+
+        circle_marker_7f5ed616f8d62500b4d2ac11ee5fa3f6.bindPopup(popup_f2fd34bbaa19d7faf75fb011aed5b36b)
+        ;
+
+        
+    
+    
+            var circle_marker_8f2125ec576d8711b6c4312bf1443c35 = L.circleMarker(
+                [-25.274398, 133.775136],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_9a129f0f708f3accb233f77219cdbc6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b63245aa6850ba7091b4fbb3063a3ad7 = $(`<div id="html_b63245aa6850ba7091b4fbb3063a3ad7" style="width: 100.0%; height: 100.0%;">Country: Australia<br>Youtubers: 2.0<br>Avg Subscriber: 16050000<br>Avg View: 7365333462</div>`)[0];
+                popup_9a129f0f708f3accb233f77219cdbc6a.setContent(html_b63245aa6850ba7091b4fbb3063a3ad7);
+            
+        
+
+        circle_marker_8f2125ec576d8711b6c4312bf1443c35.bindPopup(popup_9a129f0f708f3accb233f77219cdbc6a)
+        ;
+
+        
+    
+    
+            var circle_marker_f75e76fb03ba5af95701fdf7c51855db = L.circleMarker(
+                [35.86166, 104.195397],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.1, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_478d22054198712884c50ca92d97b39f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_665de224c98f30a3531a1fa4c609977c = $(`<div id="html_665de224c98f30a3531a1fa4c609977c" style="width: 100.0%; height: 100.0%;">Country: China<br>Youtubers: 1.0<br>Avg Subscriber: 17600000<br>Avg View: 2977741577</div>`)[0];
+                popup_478d22054198712884c50ca92d97b39f.setContent(html_665de224c98f30a3531a1fa4c609977c);
+            
+        
+
+        circle_marker_f75e76fb03ba5af95701fdf7c51855db.bindPopup(popup_478d22054198712884c50ca92d97b39f)
+        ;
+
+        
+    
+    
+            var circle_marker_3fab2e8dac6e6058824a213452688ea1 = L.circleMarker(
+                [41.87194, 12.56738],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_13474fa45eb078dfe5bdc0ac0b137003 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b44d2754247a6a9f40ed094b9f1043d4 = $(`<div id="html_b44d2754247a6a9f40ed094b9f1043d4" style="width: 100.0%; height: 100.0%;">Country: Italy<br>Youtubers: 2.0<br>Avg Subscriber: 19700000<br>Avg View: 9947448928</div>`)[0];
+                popup_13474fa45eb078dfe5bdc0ac0b137003.setContent(html_b44d2754247a6a9f40ed094b9f1043d4);
+            
+        
+
+        circle_marker_3fab2e8dac6e6058824a213452688ea1.bindPopup(popup_13474fa45eb078dfe5bdc0ac0b137003)
+        ;
+
+        
+    
+    
+            var circle_marker_5775bd28472f3895576811872a3c8d42 = L.circleMarker(
+                [55.378051, -3.435973],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.6, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_9f989da1409ee03d0b939270cd9530c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bd0cb45649df4c9ecb7752c6fa8fc86 = $(`<div id="html_6bd0cb45649df4c9ecb7752c6fa8fc86" style="width: 100.0%; height: 100.0%;">Country: United Kingdom<br>Youtubers: 26.0<br>Avg Subscriber: 20846154<br>Avg View: 10311096530</div>`)[0];
+                popup_9f989da1409ee03d0b939270cd9530c5.setContent(html_6bd0cb45649df4c9ecb7752c6fa8fc86);
+            
+        
+
+        circle_marker_5775bd28472f3895576811872a3c8d42.bindPopup(popup_9f989da1409ee03d0b939270cd9530c5)
+        ;
+
+        
+    
+    
+            var circle_marker_94706332aeb98f2394bfb96cedd98d21 = L.circleMarker(
+                [12.879720999999998, 121.774017],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6000000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_1317d2296fd30f8c3908e054051bcfb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b483decf750e06b74e069448a9f9f381 = $(`<div id="html_b483decf750e06b74e069448a9f9f381" style="width: 100.0%; height: 100.0%;">Country: Philippines<br>Youtubers: 6.0<br>Avg Subscriber: 25383333<br>Avg View: 19368448848</div>`)[0];
+                popup_1317d2296fd30f8c3908e054051bcfb0.setContent(html_b483decf750e06b74e069448a9f9f381);
+            
+        
+
+        circle_marker_94706332aeb98f2394bfb96cedd98d21.bindPopup(popup_1317d2296fd30f8c3908e054051bcfb0)
+        ;
+
+        
+    
+    
+            var circle_marker_17e8bae96a5603cea226e1d797eb65ce = L.circleMarker(
+                [4.210484, 101.975766],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.1, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_3dc38b7bb560ff7fea90c524706098f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03fc127f4419b42b6ab6965c9263d73b = $(`<div id="html_03fc127f4419b42b6ab6965c9263d73b" style="width: 100.0%; height: 100.0%;">Country: Malaysia<br>Youtubers: 1.0<br>Avg Subscriber: 17700000<br>Avg View: 9059696049</div>`)[0];
+                popup_3dc38b7bb560ff7fea90c524706098f5.setContent(html_03fc127f4419b42b6ab6965c9263d73b);
+            
+        
+
+        circle_marker_17e8bae96a5603cea226e1d797eb65ce.bindPopup(popup_3dc38b7bb560ff7fea90c524706098f5)
+        ;
+
+        
+    
+    
+            var circle_marker_ea2186979bca572840855e9b5a2d47b3 = L.circleMarker(
+                [36.204824, 138.252924],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_30570fdf6c43d31a980b4475118c4809 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ad2864f38bfc86f60f3a1179889683d = $(`<div id="html_1ad2864f38bfc86f60f3a1179889683d" style="width: 100.0%; height: 100.0%;">Country: Japan<br>Youtubers: 4.0<br>Avg Subscriber: 19525000<br>Avg View: 14155993247</div>`)[0];
+                popup_30570fdf6c43d31a980b4475118c4809.setContent(html_1ad2864f38bfc86f60f3a1179889683d);
+            
+        
+
+        circle_marker_ea2186979bca572840855e9b5a2d47b3.bindPopup(popup_30570fdf6c43d31a980b4475118c4809)
+        ;
+
+        
+    
+    
+            var circle_marker_9641a886ef6342e3553646971b9f1cdb = L.circleMarker(
+                [23.885942, 45.079162],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6000000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_cf909503fea5de66f784f77c0179ea4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08bf9d8f90d2f637605d7fd842bbecc5 = $(`<div id="html_08bf9d8f90d2f637605d7fd842bbecc5" style="width: 100.0%; height: 100.0%;">Country: Saudi Arabia<br>Youtubers: 6.0<br>Avg Subscriber: 20650000<br>Avg View: 11096180677</div>`)[0];
+                popup_cf909503fea5de66f784f77c0179ea4e.setContent(html_08bf9d8f90d2f637605d7fd842bbecc5);
+            
+        
+
+        circle_marker_9641a886ef6342e3553646971b9f1cdb.bindPopup(popup_cf909503fea5de66f784f77c0179ea4e)
+        ;
+
+        
+    
+    
+            var circle_marker_58cd3df827fd1d57b0a1ab185efaa532 = L.circleMarker(
+                [26.820553, 30.802498],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2, "stroke": true, "weight": 3}
+            ).addTo(map_cf714f7138fbefd5cb98fcd4c019640f);
+        
+    
+        var popup_4b7c3e561b80866eed9fa257c261dc9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00e21131ff4a592f66c94c8308d9d324 = $(`<div id="html_00e21131ff4a592f66c94c8308d9d324" style="width: 100.0%; height: 100.0%;">Country: Egypt<br>Youtubers: 2.0<br>Avg Subscriber: 15300000<br>Avg View: 4912370283</div>`)[0];
+                popup_4b7c3e561b80866eed9fa257c261dc9c.setContent(html_00e21131ff4a592f66c94c8308d9d324);
+            
+        
+
+        circle_marker_58cd3df827fd1d57b0a1ab185efaa532.bindPopup(popup_4b7c3e561b80866eed9fa257c261dc9c)
+        ;
+
+        
+    
+</script>
+</html>
